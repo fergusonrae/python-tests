@@ -29,7 +29,7 @@ def get_session(request) -> SparkSession:
     elif request.param == 'yarn':
         spark_session = (SparkSession
                          .builder
-                         .appName('pytest-pysaprk-yarn-testing')
+                         .appName('pytest-pyspark-yarn-testing')
                          .master('yarn-client')
                          .config('spark.executor.memory', '1g')
                          .config('spark.executor.instances', 2)
