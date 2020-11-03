@@ -44,5 +44,5 @@ pytest intro/test_intro.py
 pytest <file_path> -k "<function>"
 
 example
-<NEED EXAMPLE>
+pytest intro/test_intro.py -k "update_with_id"
 ```
