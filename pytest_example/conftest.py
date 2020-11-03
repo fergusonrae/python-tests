@@ -23,7 +23,7 @@ def get_session(request) -> SparkSession:
         spark_session = (SparkSession
                          .builder
                          .appName('pytest-pyspark-local-testing')
-                         .master('local[2')
+                         .master('local[2]')
                          .enableHiveSupport()
                          .getOrCreate())
     elif request.param == 'yarn':
