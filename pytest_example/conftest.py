@@ -38,7 +38,7 @@ def get_session(request) -> SparkSession:
     yield spark_session
     spark_session.stop()
 
-@pytest.fixture(scop='module')
+@pytest.fixture(scope='module')
 def temp_dir():
     """Creates a directory to store testing files and then once the module is done with it
     deletes all contents"""
